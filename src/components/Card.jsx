@@ -17,7 +17,7 @@ export const Card = (props) => {
 
   return (
     <div style={style}>
-      <p>太郎</p>
+      <p>山田太郎</p>
       <EditButton isAdmin={isAdmin} />
     </div>
   );
