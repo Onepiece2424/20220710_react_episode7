@@ -1,13 +1,11 @@
-import { StrictMode } from "react";
-import { createRoot } from "react-dom/client";
+import ReactDOM from "react-dom";
 
-import App from "./App";
+import { App } from "./App";
+import { AdminFlagProvider } from "./components/providers/AdminFlagProvider";
 
-const rootElement = document.getElementById("root");
-const root = createRoot(rootElement);
-
-root.render(
-  <StrictMode>
+ReactDOM.render(
+  <AdminFlagProvider>
     <App />
-  </StrictMode>
+  </AdminFlagProvider>,
+  document.getElementById("root")
 );
